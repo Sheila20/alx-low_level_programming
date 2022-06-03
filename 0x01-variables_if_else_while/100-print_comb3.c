@@ -1,34 +1,40 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
-/** 
- * main - program that prints the numbers from 00 to 99
- * Numbers must be separated by ,followed by a space
- * Numbers should be printed in ascending order with 2 digits
- * You can only use the putchar function
- * Return: 0
+/*betty style doc for function main goes there */
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-int n1 = 48;
-int n2 = 48;
-int com = 44;
-while (n1 <= 57)
+int i;
+int j;
+i = 48;
+j = 48;
+while  ((i < 58) && (j < 58))
 {
-n2 = 48;
-while (n2 <= 57)
-{
-putchar(n1);
-putchar(n2);
-if (n1 != 57 || n2 != 57)
-{
-putchar(com);
-putchar(32);
-}
-n2 += 1;
-}
-n1 += 1;
-}
 putchar('\n');
+i++;
+j++;
+}
+else
+{
+putchar(44);
+putchar(32);
+if (j < 57)
+{
+j++;
+}
+else
+{
+j = 48;
+i++;
+}
+}
+}
 return (0);
 }
+

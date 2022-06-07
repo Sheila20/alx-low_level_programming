@@ -1,20 +1,27 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - prints n..98
- * @n: number to start at
- * Return: always void
+ * print_to_98 - prints all natural numbers
+ * from n to 98, followed by a new line
+ * @n: input number.
+ * Return: no return.
  */
 
 void print_to_98(int n)
 {
-while (n >= 98 || n < 98)
+if (n > 98)
 {
-printf("%d", n);
-if n == 98)
-break;
-printf(", ");
-(n > 98) ? n-- : n++;
+for (; n > 98; n--)
+{
+printf("%d, ", n);
 }
-putchar('\n');
+}
+else if (n < 98)
+{
+for (; n < 98; n++)
+{
+printf("%d, ", n);
+}
+}
+printf("%d\n", n);
 }

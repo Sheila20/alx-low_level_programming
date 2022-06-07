@@ -1,19 +1,21 @@
 #include "_putchar"
 
 /**
- * main - program that prints _putchar.
- * Return: int
+ * main - entry point
+ * Description: Prints 0-putchar.c with _putchar
+ * Return: Always 0
  */
 
 int main(void)
 {
-int n = 0;
-char str_hbt[9] = "_putchar";
-while (n < 9)
+int i = 0;
+char c;
+char s[] = "_putchar\n";
+while (i <= 9)
 {
-_putchar(str_hbt[n]);
-n += 1;
+c = s[i];
+_putchar(c);
+i++;
 }
-_putchar('\n');
 return (0);
 }

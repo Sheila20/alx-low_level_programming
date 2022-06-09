@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * mul - multiplies two integers by one another
- * @a: that's the first one
- * @b: that's the other
- * Return: the product of a and b
+ * print_numbers - prints 0123456789\n
+ * Return: void
  */
 
-int mul(int a, int b)
+void print_numbers(void)
 {
-int product;
-product = (a * b);
-return (product);
+char c;
+for (c = '0'; c <= '9'; c++)
+{
+_putchar(c);
+}
+_putchar('\n');
 }

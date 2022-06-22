@@ -21,7 +21,9 @@ j++);
 if (i > size_r || j > size_r)
 return (0);
 m = 0;
-for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
+for (i -= 1, j -= 1, k = 0;
+k < size_r - 1;
+i--, j--, k++)
 {
 n = m;
 if (i >= 0)

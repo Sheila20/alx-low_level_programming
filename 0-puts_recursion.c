@@ -6,7 +6,7 @@
  * Return: Nothing.
  */
 
-void _puts_recursion(char *s)
+on(char *s)
 {
 if (*s == '\0')
 {
